@@ -1,6 +1,6 @@
 Allows to create constructor functions ("classes") that returns callable instances.
 
-Install with `npm install callable-klass`
+Install with `npm install callable-klass`.
 
 ### Example:
 
