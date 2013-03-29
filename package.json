@@ -1,7 +1,7 @@
 {
   "name": "callable-klass",
   "version": "0.0.0",
-  "description": "Decorates constructor functions, and have them return a callable instance that delegates to a `callable()` method when invoked",
+  "description": "Allows to create constructor functions (\"classes\") that returns callable instances",
   "main": "callable.js",
   "scripts": {
     "test": "mocha --compilers coffee:coffee-script tests",
