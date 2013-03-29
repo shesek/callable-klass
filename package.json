@@ -1,0 +1,18 @@
+{
+  "name": "callable-klass",
+  "version": "0.0.0",
+  "description": "Decorates constructor functions, and have them return a callable instance that delegates to a `callable()` method when invoked",
+  "main": "callable.js",
+  "scripts": {
+    "test": "mocha --compilers coffee:coffee-script tests",
+    "prepublish": "coffee -c callable.coffee"
+  },
+  "repository": "git://github.com/shesek/callable-klass",
+  "keywords": [ "callable" ],
+  "author": "Nadav Ivgi <npm@shesek.info>",
+  "license": "WTFPL",
+  "devDependencies": {
+    "coffee-script": "~1.6.2",
+    "mocha": "~1.8.2"
+  }
+}
