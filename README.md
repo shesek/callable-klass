@@ -1,6 +1,8 @@
 Allows to create constructor functions ("classes") that returns callable instances.
 
-Example:
+Install with `npm install callable-klass`
+
+### Example:
 
 ```coffee
 callable = require 'callable-klass'
