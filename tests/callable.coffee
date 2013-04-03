@@ -33,9 +33,16 @@ describe 'callable', ->
     deepEq (obj.apply ctx, ['a', 'b']), [ctx, 'a', 'b']
 
   it 'Allows the constructor to return a different object', ->
-    klass = callable -> foo: 'bar'
-    eq (new klass).foo, 'bar'
+    ctor = callable -> foo: 'bar'
+    eq (new ctor).foo, 'bar'
 
   it 'Ignores non-objects return values from the constructor', ->
-    klass = callable class then constrctor: -> 'bar'
-    eq (typeof new klass), 'function'
+    ctor = callable class then constrctor: -> 'bar'
+    eq (typeof new ctor), 'function'
+
+  it 'passes constructor arguments', ->
+    ctor = callable class
+      constructor: (@a, @b) ->
+      callable: -> @a + @b
+    obj = new ctor 5, 6
+    eq obj(), 11
