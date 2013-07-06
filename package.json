@@ -1,6 +1,6 @@
 {
   "name": "callable-klass",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Allows to create constructor functions (\"classes\") that returns callable instances",
   "main": "callable.js",
   "scripts": {
@@ -8,11 +8,17 @@
     "prepublish": "coffee -c callable.coffee"
   },
   "repository": "git://github.com/shesek/callable-klass",
-  "keywords": [ "callable" ],
+  "keywords": [
+    "callable"
+  ],
   "author": "Nadav Ivgi <npm@shesek.info>",
   "license": "WTFPL",
   "devDependencies": {
     "coffee-script": "~1.6.2",
     "mocha": "~1.8.2"
+  },
+  "dependencies": {
+    "coffee-script": "~1.6.3",
+    "mocha": "~1.12.0"
   }
 }
